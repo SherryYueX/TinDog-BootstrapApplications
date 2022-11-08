@@ -21,6 +21,11 @@ h3 {
   font-size: 1.6rem;
 }
 
+p {
+  color: #8f8f8f;
+  font-weight: 500;
+}
+
 #title {
   background-color: #ff4c68;
   color: white;
@@ -52,10 +57,6 @@ h3 {
   padding: 3% 15% 6%;
 }
 
-.rotate {
-  transform: rotate(25deg);
-}
-
 .titleIntro {
   padding-top: 5%;
 }
@@ -68,6 +69,19 @@ h3 {
   position: absolute;
   width: 21%;
   right: 25%;
+  transform: rotate(25deg);
+}
+
+@media (max-width: 967px) {
+  .iphone6Img {
+    position: static;
+    width: 51%;
+    transform: rotate(0);
+  }
+
+  #title {
+    text-align: center;
+  }
 }
 
 /* Features */
@@ -88,8 +102,6 @@ h3 {
 }
 
 .featureText {
-  color: #8f8f8f;
-  font-weight: 500;
   padding-bottom: 15%;
 }
 
@@ -129,4 +141,29 @@ h3 {
 
 .pricing-col {
   padding: 3% 2%;
+}
+
+
+/* Call to action section */
+#cta {
+  background-color: #ff4c68;
+  color: white;
+  text-align: center;
+  padding: 7% 10%;
+}
+
+.ctaTitle {
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+
+/* Footer */
+#footer {
+  background-color: white;
+  text-align: center;
+  padding: 5% 10%;
+}
+.rowFooter {
+  padding: 0 45% 1%;
 }
